@@ -1,0 +1,27 @@
+{
+    "title": "My second blogpost",
+    "date": "2017-04-22",
+    "metas": {
+        "title": ["title", "My second blogpost"],
+        "alias": ["alias", "my-second-blogpost"],
+        "author": ["author", "Paulius Andriekus"],
+        "description": ["description", "Let's talk about how I made this website using React and some PHP."],
+        "keywords": ["keywords", "React, JavaScript, PHP, API, Apache, Web development, Building a portfolio"],
+        "fb_app_id": ["fb:app_id", ""],
+        "og_url": ["og:url", ""],
+        "og_type": ["og:type", "website"],
+        "og_title": ["og:title", ""],
+        "og_description": ["og:description", ""],
+        "og_image": ["og:image", "/static/media/blog/paulius-andriekus.jpg"],
+        "twitter_site": ["twitter:site", "@PaulAndriekus"],
+        "twitter_card": ["twitter:card", "summary"]
+    },
+    "content": {
+        "categories": ["musings"],
+        "tags": ["React", "JavaScript", "PHP", "API", "Apache"],
+        "scripts": [],
+        "image": ["/static/media/blog/paulius-andriekus.jpg", "this is alt tag"],
+        "intro": "Intro text",
+        "text": "<h1>My second blogpost</h1><p class='first-line' style='color:red;'>This is a first paragraph</p><p>This is a second paragraph</p>"
+    }
+}
