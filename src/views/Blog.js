@@ -2,8 +2,7 @@ import React from 'react';
 
 const Blog = (props) => (
     <div>
-        {props.children}
-        {console.log(props)}
+        {props.post.content.text}
     </div>
 );
 
