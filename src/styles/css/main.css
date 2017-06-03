@@ -1,0 +1,12 @@
+html,
+body {
+  height: 100%; }
+
+.bold {
+  font-weight: 700; }
+
+.bg-white {
+  background-color: #FFFFFF; }
+
+.color-accent-dark {
+  color: #607D8B; }

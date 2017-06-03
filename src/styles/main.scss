@@ -1,0 +1,18 @@
+@import '_variables';
+
+html,
+body {
+    height: 100%;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.bg-white {
+    background-color: $primary-color-bg;
+}
+
+.color-accent-dark {
+    color: $accent-color-dark;
+}

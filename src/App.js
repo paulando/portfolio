@@ -1,9 +1,11 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Styles from './styles/css/main.css';
+import Specter from 'spectre.css/dist/spectre.min.css';
 
 // Views
-import Menu      from "./views/Menu";
-import Home      from "./views/Home";
+// import Menu      from "./views/Menu";
+import Home      from "./components/Home";
 import About     from "./views/About";
 import Portfolio from "./views/Portfolio";
 import Blog      from "./components/Blog";
@@ -14,9 +16,9 @@ import Error404  from "./views/404";
 const App = (props) => (
     <Router>
         <div>
-            <Menu />
+            {/*<Menu />*/}
 
-            <hr/>
+            {/*<hr/> */}
 
             <Switch>
                 <Route exact path="/" component={Home}/>
