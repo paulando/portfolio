@@ -4,11 +4,11 @@ import twitter from './images/twitter.svg'
 import github from './images/github.svg'
 import instagram from './images/instagram.svg'
 import linkedin from './images/linkedin.svg'
-import styles from './styles/index.css'
+import styles from '../../styles/modules/hero.scss'
 
 const Hero = () => (
-    <div>
-        <div className="bg-hero" style={{ "height": window.innerHeight, "maxHeight": "1100px" }}>
+    <div className="hero hero-theme--orange" style={{ "height": window.innerHeight, "maxHeight": "1100px" }}>
+        <div className="hero-background hero-background--orange">
             <div style={{
                 position: "absolute",
                 left: 0,

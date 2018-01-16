@@ -1,0 +1,22 @@
+// COLORS
+$blue_primary     : #03A7FF;
+$blue_secondary   : #37a7ff;
+$orange_primary   : #FF4A4A;
+$orange_secondary : #FF8A77;
+$purple_primary   : #6450EE;
+$purple_secondary : #8F3BAE;
+$dark_primary     : #37324B;
+$dark_secondary   : #312F43;
+$pink_primary     : #FF2A9D;
+$text_primary     : #575757;
+$text_secondary   : #A2A2A2;
+$text_third       : #4E4C58;
+
+
+// MIXINS
+@mixin hover-state {
+
+    &:hover, &:active, &:focus {
+        @content;
+    }
+}

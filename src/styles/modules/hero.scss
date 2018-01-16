@@ -1,0 +1,114 @@
+@import '../_variables.scss';
+
+.hero {
+    position: relative;
+    
+    .hero-background {
+        position: relative;
+        z-index: 2;
+        height: 100%;
+        background: $blue_primary; /* For browsers that do not support gradients */
+        background: linear-gradient(to right, rgba(255,0,0,0), $blue_primary); /* Standard syntax (must be last) */
+    }
+
+    &.hero-theme--blue {
+
+        .hero-background {
+            background: $blue_primary;
+            background: linear-gradient(to right, rgba(255,0,0,0), $blue_primary);
+        }
+
+        .btn-primary {
+            background: $orange_primary;
+            background: linear-gradient(to right, $blue_secondary, $orange_primary);
+        }
+    }
+
+    &.hero-theme--orange {
+
+        .hero-background {
+            background: $orange_primary;
+            background: linear-gradient(to right, rgba(255,0,0,0), $orange_primary);
+        }
+
+        .btn-primary {
+            background: $blue_primary;
+            background: linear-gradient(to right, $blue_secondary, $blue_primary);
+        }
+    }
+
+    &.hero-theme--purple {
+
+        .hero-background {
+            background: $purple_primary;
+            background: linear-gradient(to right, rgba(255,0,0,0), $purple_primary);
+        }
+
+        .btn-primary {
+            background: $orange_primary;
+            background: linear-gradient(to right, $orange_secondary, $orange_primary);
+        }
+    }
+
+    &.hero-theme--pink {
+
+        .hero-background {
+            background: $pink_primary;
+            background: linear-gradient(to right, rgba(255,0,0,0), $pink_primary);
+        }
+
+        .btn-primary {
+            background: $purple_primary;
+            background: linear-gradient(to right, $purple_secondary, $purple_primary);
+        }
+    }
+}
+
+
+h1 {
+
+    .top {
+        font-size: 6rem;
+        font-weight: 300;
+        line-height: 6rem;
+        letter-spacing: -0.88px;
+        margin-bottom: 4rem;
+    }
+
+    .middle {
+        font-size: 4.5rem;
+        font-weight: 700;
+        line-height: 4.5rem;
+        margin-bottom: 4rem;
+    }
+
+    .bottom {
+        font-size: 2.5rem;
+        font-weight: 400;
+        line-height: 2.5rem;
+        margin-bottom: 6rem;
+    }
+}
+
+.btn-block {
+    margin: 5rem 0;
+}
+
+.social-block {
+    opacity: .6;
+
+    .social-text {
+        display: inline-block;
+        vertical-align: top;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .social-icon {
+
+        @include hover-state {
+            color: darken(#FFF, 10%);
+        }
+    }
+}

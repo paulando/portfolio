@@ -2,8 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
-import './index.css'
-import '../styles/ico-fonts.css'
+import './index.scss'
+import '../styles/_template.scss'
 
 const TemplateWrapper = ({ children }) => (
   <div>

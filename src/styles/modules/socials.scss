@@ -1,0 +1,18 @@
+@import '../_variables.scss';
+
+.social-icon {
+    color: #FFF;
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 2.5rem;
+    margin: 0 0.5rem;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+    transition: all 300ms ease-in-out;
+
+    @include hover-state {
+        color: #EEE;
+        transition: all 300ms ease-in-out;
+    }
+}
