@@ -1,4 +1,4 @@
-# Portfolio wesite
+# Portfolio website
 Website built on GatsbyJS
 
 ## Deploy
