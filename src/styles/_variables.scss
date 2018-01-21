@@ -12,11 +12,43 @@ $text_primary     : #575757;
 $text_secondary   : #A2A2A2;
 $text_third       : #4E4C58;
 
+$desktop_width: 1024px;
+$tablet_width: 768;
+$mobile_width: 767;
+$mobile_portrait: 480;
 
 // MIXINS
 @mixin hover-state {
 
     &:hover, &:active, &:focus {
+        @content;
+    }
+}
+
+@mixin mq_tablet {
+
+    @media (min-width: #{$tablet_width}) and (max-width: #{$desktop_width - 1px}) {
+        @content;
+    }
+}
+
+@mixin mq_mobile {
+
+    @media screen and (max-width: #{$mobile_width}) {
+        @content;
+    }
+}
+
+@mixin mq_mobile_landscape {
+
+    @media (min-width: #{$mobile_portrait_width + 1}) and (max-width: #{$mobile_width}) {
+        @content;
+    }
+}
+
+@mixin mq_mobile_portrait {
+
+    @media screen and (max-width: #{$mobile_portrait_width}) {
         @content;
     }
 }
