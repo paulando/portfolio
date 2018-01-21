@@ -11,7 +11,7 @@ class Hero extends React.Component {
     constructor(props) {
         super(props)
 
-        this.state = { window_height: window.innerHeight }
+        this.state = { window_height: 'auto' }
     }
 
     componentDidMount() {
