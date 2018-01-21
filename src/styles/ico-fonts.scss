@@ -1,0 +1,150 @@
+@font-face {
+  font-family: 'icofont';
+  src:  url('../fonts/icofont.eot?hp57ys');
+  src:  url('../fonts/icofont.eot?hp57ys#iefix') format('embedded-opentype'),
+    url('../fonts/icofont.ttf?hp57ys') format('truetype'),
+    url('../fonts/icofont.woff?hp57ys') format('woff'),
+    url('../fonts/icofont.svg?hp57ys#icofont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icofont' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-boostrap .path1:before {
+  content: "\e900";
+  color: rgb(0, 0, 0);
+}
+.icon-boostrap .path2:before {
+  content: "\e901";
+  margin-left: -0.99609375em;
+  color: rgb(255, 255, 255);
+}
+.icon-github:before {
+  content: "\e902";
+}
+.icon-gulp .path1:before {
+  content: "\e903";
+  color: rgb(211, 74, 71);
+}
+.icon-gulp .path2:before {
+  content: "\e904";
+  margin-left: -0.4521484375em;
+  color: rgb(255, 255, 255);
+}
+.icon-gulp .path3:before {
+  content: "\e905";
+  margin-left: -0.4521484375em;
+  color: rgb(211, 74, 71);
+}
+.icon-html .path1:before {
+  content: "\e906";
+  color: rgb(217, 150, 102);
+}
+.icon-html .path2:before {
+  content: "\e907";
+  margin-left: -0.9375em;
+  color: rgb(244, 180, 89);
+}
+.icon-html .path3:before {
+  content: "\e908";
+  margin-left: -0.9375em;
+  color: rgb(255, 255, 255);
+}
+.icon-html .path4:before {
+  content: "\e909";
+  margin-left: -0.9375em;
+  color: rgb(229, 229, 229);
+}
+.icon-html .path5:before {
+  content: "\e90a";
+  margin-left: -0.9375em;
+  color: rgb(229, 229, 229);
+}
+.icon-instagram:before {
+  content: "\e90b";
+}
+.icon-jquery:before {
+  content: "\e90c";
+  color: #21609b;
+}
+.icon-js .path1:before {
+  content: "\e90d";
+  color: rgb(247, 223, 30);
+}
+.icon-js .path2:before {
+  content: "\e90e";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-linkedin:before {
+  content: "\e90f";
+}
+.icon-php:before {
+  content: "\e910";
+}
+.icon-react:before {
+  content: "\e911";
+  color: #00d8ff;
+}
+.icon-sass:before {
+  content: "\e912";
+  color: #cd6799;
+}
+.icon-terminal .path1:before {
+  content: "\e913";
+  color: rgb(0, 0, 0);
+}
+.icon-terminal .path2:before {
+  content: "\e914";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-terminal .path3:before {
+  content: "\e915";
+  margin-left: -1em;
+  color: rgb(40, 42, 53);
+}
+.icon-terminal .path4:before {
+  content: "\e916";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-terminal .path5:before {
+  content: "\e917";
+  margin-left: -1em;
+  color: rgb(14, 223, 254);
+}
+.icon-terminal .path6:before {
+  content: "\e918";
+  margin-left: -1em;
+  color: rgb(200, 144, 255);
+}
+.icon-terminal .path7:before {
+  content: "\e919";
+  margin-left: -1em;
+  color: rgb(255, 62, 180);
+}
+.icon-terminal .path8:before {
+  content: "\e91a";
+  margin-left: -1em;
+  color: rgb(0, 255, 74);
+}
+.icon-twitter:before {
+  content: "\e91b";
+}
+.icon-vscode:before {
+  content: "\e91c";
+}

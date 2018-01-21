@@ -1,0 +1,315 @@
+@import '../_variables.scss';
+
+@mixin generate-theme($class, $bg_color, $primary_color, $secondary_color) {
+
+    &.#{$class} {
+
+        .hero-background {
+            background: $bg_color;
+            background: linear-gradient(to right, rgba(255,0,0,0), $bg_color);
+        }
+
+        .btn-primary {
+            background: $primary_color;
+            background: linear-gradient(to right, $secondary_color, $primary_color);
+        }
+
+        h1 {
+
+            .middle {
+
+                &:after {
+                    background: linear-gradient(to right, $secondary_color, $primary_color);
+                }
+            }
+        }
+
+        .social-block {
+
+            .social-icon {
+
+                @include hover-state {
+                    color: $primary_color;
+                    color: linear-gradient(to right, $secondary_color, $primary_color);
+                }
+            }
+        }
+
+        @media screen and (max-width: 1023px) {
+
+            .hero-background {
+                background: $bg_color;
+                background: linear-gradient(to right, rgba(lighten($bg_color, 25%), 0.5), $bg_color);
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+
+            .hero-background {
+                background: $bg_color;
+                background: linear-gradient(to right, $bg_color, rgba(lighten($bg_color, 25%), 0.5));
+            }
+        }
+    }
+}
+
+.border-bottom {
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        height: .25em;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        margin-bottom: 1px;
+        background: linear-gradient(to right, $orange_primary, $orange_secondary);
+    }
+}
+
+.hero {
+    position: relative;
+    min-height: 100%;
+    max-height: 780px;
+    overflow: hidden;
+    
+    .hero-background {
+        position: relative;
+        z-index: 2;
+        height: 100%;
+        background: $blue_primary; /* For browsers that do not support gradients */
+        background: linear-gradient(to right, rgba(255,0,0,0), $blue_primary); /* Standard syntax (must be last) */
+
+        @media screen and (max-width: 1023px) {
+
+            .hero-background {
+                background: $blue_primary;
+                background: linear-gradient(to right, rgba(lighten($blue_primary, 25%), 0.5), $blue_primary);
+            }
+        }
+    }
+
+    .hero-image {
+        position: absolute;
+        bottom: 0;
+        margin: 0;
+        height: 100%;
+        max-height: 580px;
+    }
+
+    .hero-wrap {
+        position: absolute;
+        top: 55%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        padding-top: 0;
+        text-align: right;
+        transform: translateY(-50%);
+
+        .hero-content {
+            width: 50%;
+        }
+    }
+
+    h1 {
+
+        .top {
+            font-weight: 300;
+            font-size: 90px;
+            line-height: 90px;
+            margin-bottom: 36px;
+            letter-spacing: -0.88px;
+        }
+
+        .middle {
+            position: relative;
+            font-weight: 700;
+            font-size: 50px;
+            line-height: 50px;
+            margin-bottom: 36px;
+            @extend .border-bottom;
+        }
+
+        .bottom {
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 30px;
+            margin-bottom: 54px;
+
+        }
+    }
+
+    .btn-block {
+        margin: 30px 0 60px;
+    }
+
+    .social-block {
+        opacity: .6;
+
+        .social-text {
+            display: inline-block;
+            vertical-align: top;
+            font-size: 22px;
+            line-height: 22px;
+            margin-right: 22px;
+        }
+
+        .social-icon {
+
+            @include hover-state {
+                color: $orange_primary;
+                color: linear-gradient(to right, $orange_secondary, $orange_primary);
+            }
+        }
+    }
+
+    @include generate-theme('hero-theme--blue', $blue_primary, $pink_primary, $orange_primary);
+    @include generate-theme('hero-theme--orange', $orange_primary, $blue_primary, $blue_secondary);
+    @include generate-theme('hero-theme--purple', $purple_primary, $orange_primary, $orange_secondary);
+    @include generate-theme('hero-theme--pink', $pink_primary, $purple_primary, $purple_secondary);
+
+    @media (min-width: 1600px) {
+        max-height: 900px;
+        
+        .hero-image {
+            max-height: 750px;
+        }
+    }
+
+    // @include mq_tablet {
+    @media (min-width: 768px) and (max-width: 1024px) {
+        max-height: 700px;
+
+        h1 {
+
+            .top {
+                font-size: 60px;
+                line-height: 60px;
+            }
+
+            .middle {
+                font-size: 36px;
+                line-height: 36px;
+            }
+
+            .bottom {
+                font-size: 24px;
+                line-height: 26px;
+            }
+        }
+
+        .hero-image {
+            left: -130px;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        max-height: 640px;
+
+        .hero-wrap {
+            left: 15px;
+            right: 15px;
+        }
+
+        .hero-image {
+            max-width: 660px;
+        }
+
+        .social-block .social-text {
+            margin-right: 10px;
+
+            .social-icon {
+                margin: 0 6px;
+            }
+        }
+    }
+
+    @media (min-width: 480px) and (max-width: 767px) {
+        min-height: 500px;
+
+        .hero-image{
+            left: -80px;
+        }
+
+        h1 {
+
+            .top {
+                font-size: 50px;
+                line-height: 50px;
+                margin-bottom: 0;
+            }
+            
+            .middle {
+                font-size: 26px;
+                line-height: 26px;
+                margin-bottom: 20px;
+            }
+            
+            .bottom {
+                font-size: 18px;
+                line-height: 24px;
+                margin-bottom: 0;
+            }
+        }
+
+        .hero-wrap {
+
+            .hero-content {
+                top: 50%;
+            }
+        }
+
+        .btn-block {
+            margin: 30px 0;
+        }
+
+        .social-block {
+
+            .social-text {
+                font-size: 14px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+
+        h1 {
+
+            .top {
+                font-size: 50px;
+                line-height: 50px;
+                margin-bottom: 26px;
+            }
+
+            .middle {
+                font-size: 26px;
+                line-height: 26px;
+            }
+
+            .bottom {
+                font-size: 18px;
+                line-height: 24px;
+            }
+        }
+
+        .hero-wrap {
+            top: 50%;
+            // position: static;
+            // transform: translateY(0);
+
+            .hero-content {
+                width: 100%;
+            }
+        }
+
+        .social-block {
+
+            .social-text {
+                font-size: 14px;
+            }
+        }
+    }
+}
