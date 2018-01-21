@@ -11,8 +11,14 @@ const TemplateWrapper = ({ children }) => (
       title="Front-end web developer | Paulius Andriekus"
       meta={[
         { name: 'description', content: 'Personal website of front-end web developer - Paulius Andriekus.' },
-        { name: 'keywords', content: 'Front-end, web, developer, programmer, javascript, php, reactjs' },
+        { name: 'keywords', content: 'Front-end, Web, Developer, Programmer, Coder, Javascript, PHP, ReactJS' },
+        { property: 'og:url', content: 'https://andriekuspaulius.com' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:title', content: 'Front-end web developer | Paulius Andriekus' },
+        { property: 'og:description', content: 'Personal website of front-end web developer - Paulius Andriekus.' },
+        { property: 'og:image', content: '/static/Paulius-Andriekus.jpg' },
       ]}
+      link={[{ rel: 'author', href: 'https://plus.google.com/114846059836937592407?rel=author' }]}
     />
     <div>
       {children()}
