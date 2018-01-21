@@ -17,6 +17,7 @@ class Hero extends React.Component {
     componentDidMount() {
         setInterval(() => this.changeTheme(), 3000)
         window.addEventListener("resize", this.updateDimensions.bind(this))
+        this.updateDimensions()
     }
 
     updateDimensions() {
