@@ -11,6 +11,9 @@ $pink_primary     : #FF2A9D;
 $text_primary     : #575757;
 $text_secondary   : #A2A2A2;
 $text_third       : #4E4C58;
+$white            : #FFFFFF;
+$black            : #000000;
+$gray             : #F2F2F2;
 
 $desktop_width: 1024px;
 $tablet_width: 768;
@@ -25,6 +28,15 @@ $mobile_portrait: 480;
     }
 }
 
+// CSS
+@mixin transition($transition...) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}
+
+// MEDIA QUERIES
 @mixin mq_tablet {
 
     @media (min-width: #{$tablet_width}) and (max-width: #{$desktop_width - 1px}) {

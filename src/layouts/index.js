@@ -5,6 +5,8 @@ import Helmet from 'react-helmet'
 import './index.scss'
 import '../styles/_template.scss'
 
+import og_image from '../modules/index/images/Paulius-Andriekus.jpg'
+
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
@@ -16,7 +18,7 @@ const TemplateWrapper = ({ children }) => (
         { property: 'og:type', content: 'website' },
         { property: 'og:title', content: 'Front-end web developer | Paulius Andriekus' },
         { property: 'og:description', content: 'Personal website of front-end web developer - Paulius Andriekus.' },
-        { property: 'og:image', content: '/static/Paulius-Andriekus.jpg' },
+        { property: 'og:image', content: og_image },
       ]}
       link={[{ rel: 'author', href: 'https://plus.google.com/114846059836937592407?rel=author' }]}
     />

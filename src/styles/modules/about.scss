@@ -1,0 +1,73 @@
+@import '../_variables.scss';
+
+#about {
+    background-color: $gray;
+    padding-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+
+    .heading-paragraph {
+        margin-bottom: 10px;
+    }
+
+    .text {
+        position: relative;
+        padding-right: 40%;
+        padding-right: calc(40% + 50px);
+        padding-right: -webkit-calc(40% + 50px);
+    }
+
+    .image-block {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40%;
+        margin-bottom: 70px;
+
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 40px;
+            right: -40px;
+            background-color: $pink_primary;
+        }
+
+        img {
+            position: relative;
+            display: block;
+            z-index: 2;
+        }
+    }
+
+    @media screen and (max-width: 1023px) {
+        // @include mq_tablet{
+
+        .text {
+            position: relative;
+            padding-right: 0;
+        }
+
+        .image-block {
+            float: right;
+            position: relative;
+            width: 30%;
+            margin-left: 30px;
+        }
+    }
+
+    @media screen and (max-width: 767px) {
+        padding-bottom: 0;
+
+        .image-block {
+            margin-left: 15px;
+            margin-bottom: 30px;
+
+            &:before {
+                top: 15px;
+            }
+        }
+    }
+}

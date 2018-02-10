@@ -1,0 +1,21 @@
+@import '../_variables.scss';
+
+footer {
+    background-color: $dark_secondary;
+    text-align: center;
+    color: $text_secondary;
+    padding: 50px 0;
+
+    p {
+        margin: 0
+    }
+
+    a {
+        color: $white;
+        text-decoration: none;
+
+        @include hover-state {
+            color: $orange_primary;
+        }
+    }
+}

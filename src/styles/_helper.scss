@@ -1,0 +1,30 @@
+@import '_variables.scss';
+
+.text-color--purple-primary {
+    color: $purple_primary;
+}
+
+.text-color--purple-secondary {
+    color: $purple_secondary;
+}
+
+.text-color--pink-primary {
+    color: $pink_primary;
+}
+
+.text-color--blue-primary {
+    color: $blue_primary;
+}
+
+.icon-block {
+    position: relative;
+    font-size: 80px;
+    height: 80px;
+
+    * {
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+}

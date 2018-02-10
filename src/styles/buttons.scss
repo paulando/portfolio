@@ -26,11 +26,13 @@
 .btn-primary {
     @extend .button;
     color: #FFF;
+    border: none;
     background: $orange_primary;
     background: linear-gradient(to right, $orange_primary, $orange_secondary);
     transition: all 300ms ease-in-out;
     
     @include hover-state {
+        outline: 0;
         opacity: 0.9;
         transition: all 300ms ease-in-out;
     }

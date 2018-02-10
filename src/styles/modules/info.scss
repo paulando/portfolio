@@ -1,0 +1,50 @@
+@import '../_variables.scss';
+
+#info {
+    padding: 70px 0;
+    text-align: center;
+    background-color: $dark_primary;
+
+    h3 {
+        margin-bottom: 70px;
+
+        .first-name {
+            color: $text_secondary;
+        }
+    
+        .last-name {
+            color: $white;
+            display: block;
+            margin: 15px 0;
+
+            &:after {
+                content: "";
+                display: block;
+                text-align: center;
+                height: 5px;
+                width: 80px;
+                margin: 15px auto;
+                background-color: $blue_primary;
+            }
+        }
+    }
+
+    .social-icon {
+        color: $text_secondary;
+        height: 42px;
+        width: 42px;
+        font-size: 42px;
+        margin: 0 20px;
+
+        @include hover-state {
+            color: $orange_primary;
+        }
+    }
+
+    @media screen and (max-width: 419px) {
+
+        .social-icon {
+            margin: 0 15px;
+        }
+    }
+}
