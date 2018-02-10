@@ -25,13 +25,13 @@ const TemplateWrapper = ({ children }) => (
         { property: 'og:type', content: 'website' },
         { property: 'og:title', content: meta_title },
         { property: 'og:description', content: meta_description },
-        { property: 'og:image', content: `${meta_url}/${og_image}` },
+        { property: 'og:image', content: `${meta_url}${og_image}` },
         { property: 'twitter:card', content: 'summary' },
         { property: 'twitter:site', content: '@PaulAndriekus' },
         { property: 'twitter:creator', content: '@PaulAndriekus' },
         { property: 'twitter:title', content: meta_title },
         { property: 'twitter:description', content: meta_description },
-        { property: 'twitter:image', content: `${meta_url}/${twitter_image}` }
+        { property: 'twitter:image', content: `${meta_url}${twitter_image}` }
       ]}
       link={[
         { rel: 'icon', href: favicon },
