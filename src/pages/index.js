@@ -5,6 +5,7 @@ import Skills from '../modules/index/skills'
 import About from '../modules/index/about'
 import Info from '../modules/index/info'
 import Footer from '../modules/index/footer'
+import ModalResume from '../modules/modalResume'
 
 const IndexPage = () => (
   <div>
@@ -13,6 +14,7 @@ const IndexPage = () => (
     <About />
     <Info />
     <Footer />
+    <ModalResume />
   </div>
 )
 

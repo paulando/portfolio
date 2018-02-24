@@ -15,6 +15,7 @@ class Hero extends React.Component {
 
         setInterval(() => this.changeTheme(), 3000)
 
+        document.getElementById("btn_modal_close").addEventListener("click", this.closeModal.bind(this))
         window.addEventListener("resize", this.updateDimensions.bind(this))
 
         this.updateDimensions()
@@ -50,6 +51,14 @@ class Hero extends React.Component {
 
     }
 
+    openModal() {
+        document.getElementById("modal_resume").classList.add("opened")
+    }
+
+    closeModal() {
+        document.getElementById("modal_resume").classList.remove("opened")
+    }
+
     render() {
 
         const { window_height } = this.state
@@ -66,7 +75,7 @@ class Hero extends React.Component {
                                     <span className="bottom" style={{ display: "block" }}>Front-end web developer.</span>
                                 </h1>
                                 <div className="btn-block">
-                                    <button className="btn-primary" style={{ "display": "inline-block" }} onClick={() => this.scrollToBlock()}>Know more</button>
+                                    <button className="btn-primary" style={{ "display": "inline-block" }} onClick={() => this.openModal()}>Résumé</button>
                                 </div>
                                 <div className="social-block">
                                     <span className="social-text">connect with me</span>

@@ -28,3 +28,39 @@
         right: 0;
     }
 }
+
+.icon-flag {
+    display: inline-block;
+    vertical-align: top;
+    height: 75px;
+    width: 128px;
+    margin: 0 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    @include transform(scale(1));
+    @include transition(300ms ease-in-out);
+
+    @include hover-state {
+        @include transform(scale(1.1));
+        @include transition(300ms ease-in-out);
+    }
+
+    @media (max-width: 480px) {
+
+        &:not(:last-child) {
+            display: block;
+            margin: 0 auto 30px;
+        }
+    }
+}
+
+.icon-flag--en {
+    @extend .icon-flag;
+    background-image: url('../modules/index/images/english.svg');
+}
+
+.icon-flag--lt {
+    @extend .icon-flag;
+    background-image: url('../modules/index/images/lithuanian.svg');
+}

@@ -1,0 +1,72 @@
+@import '../_variables.scss';
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0;
+    background-color: rgba($white, 0.5);
+    @include transition(opacity 300ms ease-in-out);
+    
+    &.opened {
+        opacity: 1;
+        z-index: $z_modal;
+        @include transition(opacity 300ms ease-in-out);
+
+        .modal-wrap {
+            position: relative;
+            top: 50%;
+            @include transform(translateY(-50%));
+            @include transition(top 300ms ease-in-out);
+        }
+    }
+
+    .modal-wrap {
+        position: relative;
+        top: -100%;
+        max-width: 700px;
+        max-height: 80vh;
+        margin: 0 auto;
+        padding: 0 0 50px;
+        background-color: $gray;
+        @include transform(translateY(0));
+        @include transition(top 300ms ease-in-out);
+
+        .modal-header {
+            position: relative;
+            text-align: center;
+            padding: 15px 30px;
+
+            .modal-header--heading {
+                margin: 0;
+            }
+
+            .modal-header--close {
+                cursor: pointer;
+                display: inline-block;
+                position: absolute;
+                top: 50%;
+                font-size: 30px;
+                line-height: 30px;
+                right: 30px;
+                @include transform(translateY(-50%));
+            }
+        }
+
+        .modal-body {
+            text-align: center;
+            padding: 30px;
+        }
+    }
+
+    @media (max-width: 730px) {
+
+        .modal-wrap {
+            padding-bottom: 20px;
+            margin: 0 15px;
+        }
+    }
+}
